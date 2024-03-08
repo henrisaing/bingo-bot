@@ -1,0 +1,16 @@
+BingoBot Commands
+=============================
+STRUCTURE
+(calls bot)    	(arguments depend on command)
+BingoBot Command Argument1 Argument2 Argument3
+
+
+COMMANDS (case insensitive)
+=============================
+Help || ? - Returns a list of commands
+GetAll - Returns all bingo collections and collectionIds BingoBot has access to
+Get {int collectionId} - Returns all bingo tiles and tileIds in collection
+GetCard {int collectionId} - Returns link to a bingo card from collection
+Create {str collectionName} {str public|private} - Creates a collection with specified name and access
+Add {int collectionId} {str tileName} {int chance(1-10)} - Adds tile to collection with specified chance
+Update {int tileID} {str tileName} {int chance(1-10)} - Changes specified tile to user input
